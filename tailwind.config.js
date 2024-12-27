@@ -6,7 +6,11 @@ export default {
     './public/**/*.{vue}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderImage: {
+        dissolved: 'linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)) 1',
+      },
+    },
   },
   plugins: [],
 }

@@ -1,8 +1,8 @@
 <template>
     <div class="flex flex-col min-h-screen" :class="[background_color]">
-      <div class="flex-1 grid grid-cols-12">
+      <div class="flex-1 grid grid-cols-12 md:grid-cols-10">
 		    <BaseNavbar class="col-span-2" v-if="show_navbar" :background_color="'bg-green-400'" />
-        <div class="col-span-10 bg-gray-200">
+        <div class="col-span-10 md:col-span-8 bg-gray-200">
           <BaseHeader v-if="show_header" />
           <div class="min-h-max">
             <slot />
